@@ -1,0 +1,70 @@
+.main {
+  min-height: 82vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  /*
+  min-h-scren flex flex-row justify-center items-center font-mono
+  */
+}
+
+.footer {
+  display: flex;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 70%;
+  height: 50%;
+  margin-left: 20%;
+  /*
+  w-3/5 h-2/4 ml-32
+  */
+}
+
+.title {
+  font-size: 2rem;
+  margin: 2rem 0;
+  /*
+  text-4xl my-8 mx-0
+  */
+}
+
+.description {
+  line-height: 1;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  /*
+  leading-none my-8 mx-0 text-lg
+  */
+}
+
+.button {
+  border-radius: 4px;
+  background-color: blue;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  margin-bottom: 2%;
+  /*
+  border-none rounded-lg bg-pink-500 
+  "mt-4 w-full bg-pink-500 text-white font-bold py-2 px-12 rounded"
+  $"mt-4 w-2/5 bg-pink-500 text-white font-bold py-2 px-4 rounded"
+  */
+}
+@media (max-width: 1000px) {
+  .main {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
